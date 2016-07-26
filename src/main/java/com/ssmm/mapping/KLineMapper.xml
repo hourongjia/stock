@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssmm.dao.UserMapper">
+    <cache readOnly="true"/>
+
+    <sql id="Base_Column_List">
+        volume, open, close, high,low,chg,percent,turnrate,ma5,ma10,ma20,ma30,dea,dif,macd,time
+    </sql>
+
+    <select id="selectList" resultMap="com.ssmm.model.KLine"
+            parameterType="com.ssmm.model.KLine">
+        select
+        <include refid="Base_Column_List" />
+        from user
+    </select>
+
+</mapper>
