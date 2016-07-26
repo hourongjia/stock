@@ -8,6 +8,14 @@
 	<name>ssmm Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
